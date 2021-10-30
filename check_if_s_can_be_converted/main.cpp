@@ -1,5 +1,4 @@
-#include "core.cpp"
-
+#include "core.h"
 int main(int argc, char** argv) {
     std::string s;
     std::string t;
@@ -7,7 +6,7 @@ int main(int argc, char** argv) {
     std::cin>>s;
     std::cin>>t;
     std::cin>>k;
-    std::cout<<ConcatRemove(s,t,k)<<std::endl;
+    std::cout<<core::ConcatRemove(s,t,k)<<std::endl;
     system("pause");
     return 0;
 }

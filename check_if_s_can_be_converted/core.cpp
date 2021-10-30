@@ -1,15 +1,16 @@
-#include <string>
-#include <iostream>
-namespace {
+
+#include "core.h"
+
+namespace core{
 
     bool check_if_chars_in_az_ascii(const std::string &s){
         int ascii_char = -1;
         const char *p_s = s.c_str();
         bool resp = false;
         for (int i=0;i<s.length();i++){
-           ascii_char = (int)p_s[i];
-           resp = (97 <= ascii_char <= 122);
-           if (!resp){return resp;}
+            ascii_char = (int)p_s[i];
+            resp = (ascii_char <= 122)&&(ascii_char>=97);
+            if (!resp){return resp;}
         }
         return resp;
     }
