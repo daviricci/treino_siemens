@@ -1,6 +1,6 @@
-#include <iostream>
+#include "print_100.cpp"
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
+int main(int argc, char** argv) {
+    print_one_hundred_s1();
     return 0;
 }
