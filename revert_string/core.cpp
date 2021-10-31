@@ -7,14 +7,14 @@ namespace core{
         }
         return  length;
     }
-    std::string slice_string(std::string s,int i,int j){
+    std::string SliceString(std::string s, int i, int j){
         if (i==j)return std::string(1,s[i]);
-        return std::string(1,s[i]).append(slice_string(s,i+1,j));
+        return std::string(1,s[i]).append(SliceString(s, i + 1, j));
     }
     std::string RevertString(std::string input){
         int length = CalculatesStringLength(input)-1;
         if (length==0){return input;}
-        return std::string(1,input[length]).append(RevertString(slice_string(input,0,length-1)));
+        return std::string(1,input[length]).append(RevertString(SliceString(input, 0, length - 1)));
     }
 
 }
