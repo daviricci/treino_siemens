@@ -1,32 +1,18 @@
-# Prerequisites
-*.d
+# git
+*.gitignore
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# cpp
 
-# Precompiled Headers
-*.gch
-*.pch
+check_if_s_can_be_converted/.idea
+check_if_s_can_be_converted/cmake-build-debug
+check_if_s_can_be_converted/tests/.idea
+check_if_s_can_be_converted/tests/cmake-build-debug
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+print_one_hundred/.idea
+print_one_hundred/cmake-build-debug
 
-# Fortran module files
-*.mod
-*.smod
+calculates_the_length_of_a_string/.idea
+calculates_the_length_of_a_string/cmake-build-debug
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+revert_string/.idea
+revert_string/cmake-build-debug
